@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Card Slider</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div class="card-box">
+            <div class="images" id="card_inner">
+                <div class="card_face--front">
+                    <img src="images/Auston-Matthews.jpg" alt="" class="pp1" id="front" style: "display: none;"/>
+                    <img src="images/Mitch-Marner.jpg" alt="" class="pp2" id="front" style: "display: none;"/>
+                    <img src="images/Jason-Spezza.jpg" alt="" class="pp3" id="front" style: "display: none;"/>
+                </div>
+    
+                <div class="card_face--back">
+                    <img src="images/Auston-Matthews-stats.jpg" class="back" id="back" />
+                    
+                    
+                </div>
+            </div>
+            <div onclick="side_slide(-1)" class="slide left">
+                <span class="fa fa-angle-left"></span>
+            </div>
+    
+            <div onclick="side_slide(1)" class="slide right">
+                <span class="fa fa-angle-right"></span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
